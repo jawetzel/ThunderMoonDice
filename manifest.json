@@ -1,0 +1,25 @@
+{
+  "name": "ThunderMoonDice",
+  "short_name": "ThunderMoonDice",
+  "start_url": "https://www.thundermoondice.com",
+  "icons": [
+    {
+      "src": "\/assets\/content\/Logo.png",
+      "sizes": "168x168",
+      "type": "image\/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "categories": ["entertainment", "games", "personalization", "shopping"],
+  "description": "Thunder Moon Dice creates made to order 5e dice sets for DND and dice games. Choose from dice set design we have on display or bring a custom design.",
+  "lang": "en-US",
+  "screenshots": [
+    {
+      "src": "\/assets\/content\/screenshot.png",
+      "sizes": "1750x931",
+      "type": "image\/png"
+    }
+  ]
+}
