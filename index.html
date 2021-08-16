@@ -5,6 +5,8 @@
     <link rel="icon" href="./Logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'sha256-n4qg7uoCNEViGdbUv8rgUggK33XE05FBqz9mpyK2WfI=' https://fonts.gstatic.com https://cdn.jsdelivr.net https://fonts.googleapis.com https://www.googletagmanager.com 'sha256-JwksZqWj75+SncMQTOq5Yo4vmoEU8u2RWTZLV6weEoA=' 'sha256-h+MX6y/NW0MZ8UCeoxCtU580N5pSdG1I+nO5WXL1JF8='">
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -26,6 +28,16 @@
         gtag('js', new Date());
 
         gtag('config', 'G-D9LENM08H7');
+    </script>
+
+    <script>
+        var RecordExternalClick = function (btnName, location) {
+            gtag('event', "click", {
+                'event_category': "external-click",
+                'event_label': location,
+                'value': btnName
+        });
+        }
     </script>
 
 
@@ -66,7 +78,7 @@
         <img src="./assets/logotrans.png" alt="Thunder Moon Dice Logo" height="50" class="align-top me-4">
         <span class="align-top ">Thunder Moon Dice</span>
         <div class=" d-none d-md-inline-block float-end mt-2">
-            <a class="btn btn-dark text-uppercase h-100 " target="_blank" rel="noreferrer noopener" title="External Link - Custom Order">
+            <a onclick="RecordExternalClick('custom order', 'header')" href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-dark text-uppercase h-100 " target="_blank" rel="noreferrer noopener" title="External Link - Custom Order">
                 <strong class="d-block">
                     Custom Order Now!
                 </strong>
@@ -85,7 +97,7 @@
 <div class="container my-4 pb-4">
     <div class="row d-md-none">
         <div class="col-12">
-            <a class="btn btn-dark text-uppercase w-100 " target="_blank" rel="noreferrer noopener" title="External Link - Custom Order">
+            <a class="btn btn-dark text-uppercase w-100 " onclick="RecordExternalClick('custom order', 'body')" href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" target="_blank" rel="noreferrer noopener" title="External Link - Custom Order">
                 <strong class="d-block">
                     Custom Order Now!
                 </strong>
@@ -114,116 +126,116 @@
                 <div class="card-body text-center">
                     <h4 class="card-title mb-4">ASTRAL</h4>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
+                    <a onclick="RecordExternalClick('order astral', 'body')" href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card text-white bg-dark border-0 p-1">
-                <img src="./assets/content/blackveins.jpg" class="card-img-top" alt="Astral Die Set">
+                <img src="./assets/content/blackveins.jpg" class="card-img-top" alt="Shadow Smoke Die Set">
                 <div class="card-body text-center">
                     <h4 class="card-title mb-4">SHADOW SMOKE</h4>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
+                    <a onclick="RecordExternalClick('order shadow smoke', 'body')" href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card text-white bg-dark border-0 p-1">
-                <img src="./assets/content/chaostranslucent.jpg" class="card-img-top" alt="Astral Die Set">
+                <img src="./assets/content/chaostranslucent.jpg" class="card-img-top" alt="Goblin">
                 <div class="card-body text-center">
                     <h4 class="card-title mb-4">GOBLIN</h4>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
+                    <a onclick="RecordExternalClick('order goblin', 'body')" href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card text-white bg-dark border-0 p-1">
-                <img src="./assets/content/disturbedFlesh.jpg" class="card-img-top" alt="Astral Die Set">
+                <img src="./assets/content/disturbedFlesh.jpg" class="card-img-top" alt="Necromancer Die Set">
                 <div class="card-body text-center">
                     <h4 class="card-title mb-4">NECROMANCER</h4>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
+                    <a onclick="RecordExternalClick('order necromancer', 'body')" href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card text-white bg-dark border-0 p-1">
-                <img src="./assets/content/goldhighlightsblack.jpg" class="card-img-top" alt="Astral Die Set">
+                <img src="./assets/content/goldhighlightsblack.jpg" class="card-img-top" alt="Gold Stone Die Set">
                 <div class="card-body text-center">
                     <h4 class="card-title mb-4">GOLD STONE</h4>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
+                    <a onclick="RecordExternalClick('order gold stone', 'body')" href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card text-white bg-dark border-0 p-1">
-                <img src="./assets/content/mana.jpg" class="card-img-top" alt="Astral Die Set">
+                <img src="./assets/content/mana.jpg" class="card-img-top" alt="Mana In Carnate Die Set">
                 <div class="card-body text-center">
                     <h4 class="card-title mb-4">MANA IN CARNATE</h4>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
+                    <a onclick="RecordExternalClick('order mana in carnate', 'body')" href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card text-white bg-dark border-0 p-1">
-                <img src="./assets/content/orangemarble.jpg" class="card-img-top" alt="Astral Die Set">
+                <img src="./assets/content/orangemarble.jpg" class="card-img-top" alt="Marble Die Set">
                 <div class="card-body text-center">
                     <h4 class="card-title mb-4">MARBLE</h4>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
+                    <a onclick="RecordExternalClick('order marble', 'body')" href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
                 </div>
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card text-white bg-dark border-0 p-1">
-                <img src="./assets/content/pinkveins.jpg" class="card-img-top" alt="Astral Die Set">
+                <img src="./assets/content/pinkveins.jpg" class="card-img-top" alt="Pink Spirits Die Set">
                 <div class="card-body text-center">
                     <h4 class="card-title mb-4">PINK SPIRITS</h4>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
+                    <a  onclick="RecordExternalClick('order pink spirits', 'body')" href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card text-white bg-dark border-0 p-1">
-                <img src="./assets/content/silverhighlistsblack.jpg" class="card-img-top" alt="Astral Die Set">
+                <img src="./assets/content/silverhighlistsblack.jpg" class="card-img-top" alt="Silver Stone Die Set">
                 <div class="card-body text-center">
                     <h4 class="card-title mb-4">SILVER STONE</h4>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
+                    <a onclick="RecordExternalClick('order silver stone', 'body')" href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card text-white bg-dark border-0 p-1">
-                <img src="./assets/content/sleepingmagic.jpg" class="card-img-top" alt="Astral Die Set">
+                <img src="./assets/content/sleepingmagic.jpg" class="card-img-top" alt="Dreams Spell Die Set">
                 <div class="card-body text-center">
-                    <h4 class="card-title mb-4" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">DREAMS SPELL</h4>
+                    <h4 class="card-title mb-4" rel="noreferrer noopener" title="External Link - Order Item">DREAMS SPELL</h4>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
+                    <a onclick="RecordExternalClick('order dreams spell', 'body')" href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card text-white bg-dark border-0 p-1">
-                <img src="./assets/content/swamp.jpg" class="card-img-top" alt="Astral Die Set">
+                <img src="./assets/content/swamp.jpg" class="card-img-top" alt="Swamp Die Set">
                 <div class="card-body text-center">
                     <h4 class="card-title mb-4">SWAMP</h4>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
+                    <a onclick="RecordExternalClick('order swamp', 'body')" href="https://docs.google.com/forms/d/e/1FAIpQLSf_F5bxtnRWEArl-9e3g90oBWZTSJqAd7cCOOXbjS5MMN1TdQ/viewform" class="btn btn-primary" target="_blank" rel="noreferrer noopener" title="External Link - Order Item">ORDER</a>
                 </div>
             </div>
         </div>
@@ -235,7 +247,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="p-4">
-                    <a href="https://www.instagram.com/thundermoondice/" target="_blank" rel="noreferrer noopener" title="External Link - Thunder Moon Dice Instagram">
+                    <a onclick="RecordExternalClick('instagram', 'footer')" href="https://www.instagram.com/thundermoondice/" target="_blank" rel="noreferrer noopener" title="External Link - Thunder Moon Dice Instagram">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                         </svg>
@@ -247,7 +259,7 @@
         <div class="row">
             <div class="col-12">
                 <div>THUNDER MOON DICE</div>
-                <div>EMAIL: INFO@THUNDERMOONDICE.COM</div>
+                <div>EMAIL: <a href="mailto: INFO@THUNDERMOONDICE.COM?subject=Dice Question From ThunderMoonDice.com"><strong>INFO@THUNDERMOONDICE.COM</strong></a></div>
                 <div>MADE IN THE USA</div>
             </div>
 
