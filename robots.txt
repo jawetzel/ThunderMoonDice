@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: https://www.thundermoondice.com/sitemap.xml
+Sitemap: https://thundermoondice.com/sitemap.xml
