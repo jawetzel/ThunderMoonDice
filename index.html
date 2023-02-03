@@ -33,7 +33,7 @@
 
     <script>
         var RecordExternalClick = function (btnName, location) {
-            gtag('event', "external-click", {
+            gtag('event', "external-click - " + btnName, {
                 'event_category': location,
                 'event_label': btnName
         });
