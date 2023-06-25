@@ -97,7 +97,7 @@
     <div class="d-flex flex-row">
         <a href="#DICE" class="px-4 me-2 btn btn-sm btn-secondary">Dice</a>
         <a href="#POTIONS" class="px-4 me-2 btn btn-sm btn-secondary">Potions</a>
-        <a href="#SHIRTS" class="px-4 me-2 btn btn-sm btn-secondary">Shirts</a>
+        <a style="display: none;" href="#SHIRTS" class="px-4 me-2 btn btn-sm btn-secondary">Shirts</a>
         <a href="#ACCESSORIES" class="px-4 me-2 btn btn-sm btn-secondary">Accessories</a>
     </div>
 
@@ -145,7 +145,7 @@
                         </p>
 
                         <p>
-                            All dice sets are handmade and custom. Any product you order will be made for you individually and may not match the images of products shown.
+                            All products are custom made. Any product you order will be made for you individually and may not match the images of products shown.
                         </p>
                     </div>
                     
@@ -160,10 +160,10 @@
         <div class="col-12">
             <div class="card bg-white p-3">
                 <div class="mb-4">
-                    <strong>DICE</strong> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo autem.
+                    <strong>DICE - </strong> Thundermoondice was founded on the desire to create custom, personal 
+					connections to characters and the collective experience of players at the table. Dice are 
+					only made available for purchase after being rigorously tested for balance regardless of 
+					the inclusions used. Additionaly the resin used to create them is non-toxic once cured.
                 </div>
                 <div class="container">
                     <div class="items row" id="diceImages">
@@ -179,10 +179,11 @@
         <div class="col-12">
             <div class="card bg-white p-3">
                 <div class="mb-4">
-                    <strong>POTIONS</strong> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo autem.
+                    <strong>POTIONS - </strong> Tokens and bottles! We have simple, easy to read Tokens relating to 
+					5e healing potions, displaying the value of healing from the humble Common up to the luxurious 
+					Supreme. If you might prefer to roll the dice as well, we have Potion Bottles as well - shake 
+					them and pour out your potion to see just how Supreme it was! The dice contained and resin used 
+					meet the same standards of care and service of all of our dice. 
                 </div>
                 <div class="container">
                     <div class="items row" id="potionsImages">
@@ -193,7 +194,7 @@
         </div>
     </div>
 
-    <div id="SHIRTS" class="row mt-4">
+    <div style="display: none;"	id="SHIRTS" class="row mt-4">
         <div class="col-12">
             <div class="card bg-white p-3">
                 <div class="mb-4">
@@ -215,10 +216,7 @@
         <div class="col-12">
             <div class="card bg-white p-3">
                 <div class="mb-4">
-                    <strong>ACCESSORIES</strong> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo autem.
+                    <strong>ACCESSORIES</strong> - Stickers, earrings, tokens, and more! All are hand crafted and non-toxic.
                 </div>
                 <div class="container">
                     <div class="items row" id="accessoriesImages">
@@ -241,7 +239,7 @@
                         <img src="${item.imageLink}" class="card-img-top" alt="${item.name}">
                         <div class="card-body text-center">
                             <a onclick="RecordExternalClick('order ${item.name}', 'body')"
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSdG9ZoQuuY_gh0sJp94hoE4cH4PxZIGaTxgK1Rvjfmv4wMTtw/viewform"
+                            href="${item.link}"
                             class="btn btn-primary btn-sm" target="_blank" rel="noreferrer noopener"
                             title="External Link - Order Item">${item.name}</a>
                         </div>
@@ -256,41 +254,50 @@
             {
                 name: "Mista J",
                 imageLink: "./assets/content/Dice/chaostranslucent.jpg",
+				link: "https://docs.google.com/forms/d/e/1FAIpQLSdG9ZoQuuY_gh0sJp94hoE4cH4PxZIGaTxgK1Rvjfmv4wMTtw/viewform",
             },        
             {
                 name: "GOLD STONE",
                 imageLink: "./assets/content/Dice/goldhighlightsblack.jpg",
+				link: "https://docs.google.com/forms/d/e/1FAIpQLSdG9ZoQuuY_gh0sJp94hoE4cH4PxZIGaTxgK1Rvjfmv4wMTtw/viewform",
             },
             {
                 name: "MARBLE",
                 imageLink: "./assets/content/Dice/orangemarble.jpg",
+				link: "https://docs.google.com/forms/d/e/1FAIpQLSdG9ZoQuuY_gh0sJp94hoE4cH4PxZIGaTxgK1Rvjfmv4wMTtw/viewform",
             },        
             {
                 name: "SWAMP",
                 imageLink: "./assets/content/Dice/swamp.jpg",
+				link: "https://docs.google.com/forms/d/e/1FAIpQLSdG9ZoQuuY_gh0sJp94hoE4cH4PxZIGaTxgK1Rvjfmv4wMTtw/viewform",
             },
             {
                 name: "BATH TIME",
                 imageLink: "./assets/content/Dice/bathtime.jpg",
+				link: "https://docs.google.com/forms/d/e/1FAIpQLSdG9ZoQuuY_gh0sJp94hoE4cH4PxZIGaTxgK1Rvjfmv4wMTtw/viewform",
             },        
             {
                 name: "SACRED FLAME",
                 imageLink: "./assets/content/Dice/sacredflame.jpg",
+				link: "https://docs.google.com/forms/d/e/1FAIpQLSdG9ZoQuuY_gh0sJp94hoE4cH4PxZIGaTxgK1Rvjfmv4wMTtw/viewform",
             },
             {
                 name: "LOST YOUR MARBLES",
                 imageLink: "./assets/content/Dice/lostyourmarbles.jpg",
+				link: "https://docs.google.com/forms/d/e/1FAIpQLSdG9ZoQuuY_gh0sJp94hoE4cH4PxZIGaTxgK1Rvjfmv4wMTtw/viewform",
             },
             {
                 name: "PUMPKIN KING",
                 imageLink: "./assets/content/Dice/pumpkinking.jpg",
+				link: "https://docs.google.com/forms/d/e/1FAIpQLSdG9ZoQuuY_gh0sJp94hoE4cH4PxZIGaTxgK1Rvjfmv4wMTtw/viewform",
             }
         ];
 
         var potionsList = [
             {
-                name: "Mista J",
-                imageLink: "./assets/content/chaostranslucent.jpg",
+                name: "Potion Tokens",
+                imageLink: "./assets/content/Potions/Potion_Token_Red.jpg",
+				link: "https://docs.google.com/forms/d/e/1FAIpQLSdG9ZoQuuY_gh0sJp94hoE4cH4PxZIGaTxgK1Rvjfmv4wMTtw/viewform",
             },
         ];
 
@@ -298,13 +305,25 @@
             {
                 name: "Mista J",
                 imageLink: "./assets/content/chaostranslucent.jpg",
+				link: "https://docs.google.com/forms/d/e/1FAIpQLSdG9ZoQuuY_gh0sJp94hoE4cH4PxZIGaTxgK1Rvjfmv4wMTtw/viewform",
             },
         ];
 
         var accessoriesList = [
             {
-                name: "Mista J",
-                imageLink: "./assets/content/chaostranslucent.jpg",
+                name: "Earrings",
+                imageLink: "./assets/content/Accessories/Earrings_Amber.jpg",
+				link: "https://docs.google.com/forms/d/e/1FAIpQLSdG9ZoQuuY_gh0sJp94hoE4cH4PxZIGaTxgK1Rvjfmv4wMTtw/viewform",
+            },
+			{
+                name: "Dice Keychain",
+                imageLink: "./assets/content/Accessories/Keychain_Galaxy.jpg",
+				link: "https://docs.google.com/forms/d/e/1FAIpQLSdG9ZoQuuY_gh0sJp94hoE4cH4PxZIGaTxgK1Rvjfmv4wMTtw/viewform",
+            },
+			{
+                name: "Sword Keychain",
+                imageLink: "./assets/content/Accessories/Keychain_Sword_Copper.jpg",
+				link: "https://docs.google.com/forms/d/e/1FAIpQLSdG9ZoQuuY_gh0sJp94hoE4cH4PxZIGaTxgK1Rvjfmv4wMTtw/viewform",
             },
         ];
 
@@ -340,6 +359,25 @@
 </div>
 <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
+		<div class="row">
+            <div class="col-12">
+				<h3>Partners</h3>
+                <div>
+					<div><strong>Twisted Things Organic Apothecary & Curious Goods</strong></div>
+					<div>
+						<a target="_blank" href="https://www.google.com/maps/search/?api=1&query=40+North+Huron+St.+Ypsilanti+MI+48197">40 North Huron St. Ypsilanti MI 48197</a>
+					</div>
+					<div><a href="tel:1-734-961-7881">734-961-7881</a></div>
+					<div><a target="_blank" href="http://www.twistedthingsypsi.com/"><strong>twistedthingsypsi.com</strong></a></div>
+				</div>
+            </div>
+
+        </div>
+		<div class="row">
+            <div class="col-12">
+				<hr/>
+			</div>
+        </div>
         <div class="row">
             <div class="col-12">
                 <div class="pr-4 py-4 d-inline-block">
@@ -360,9 +398,10 @@
                 </div>
             </div>
         </div>
+		
         <div class="row">
             <div class="col-12">
-                <div>THUNDER MOON DICE</div>
+                <div><strong>THUNDER MOON DICE</strong></div>
                 <div>EMAIL: <a href="mailto: INFO@THUNDERMOONDICE.COM?subject=Dice Question From ThunderMoonDice.com"><strong>INFO@THUNDERMOONDICE.COM</strong></a></div>
                 <div>MADE IN THE USA</div>
             </div>
